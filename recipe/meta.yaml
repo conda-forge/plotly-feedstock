@@ -1,6 +1,6 @@
-{% set version = "1.12.4" %}
-{% set sha256 = "6136ebcc6cd6435b5d238385b395d856e75773a58c303c5107c9834ca5577bbd" %}
-{% set md5 = "f1ff6b1b18554258aab50449ab571ee2" %}
+{% set version = "1.12.5" %}
+{% set sha256 = "b5a6260626b9b7caafb73e7a54447790337383373b699c3c323a45f32f27f7cd" %}
+{% set md5 = "6ee8480c40064a3650940001bd7bbc09" %}
 
 package:
   name: plotly
@@ -22,7 +22,6 @@ requirements:
     - setuptools
   run:
     - python
-    - setuptools
     - requests
     - pytz
     - six
@@ -35,8 +34,6 @@ about:
   home: https://plot.ly/python/
   license: MIT
   summary: 'An interactive, browser-based graphing library for Python'
-
-  # The remaining entries in this section are optional, but recommended
   description: |
     Plotly's Python graphing library makes interactive,
     publication-quality graphs online. Examples of how to make line
