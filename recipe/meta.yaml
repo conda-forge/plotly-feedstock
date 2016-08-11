@@ -1,16 +1,15 @@
-{% set version = "1.12.5" %}
-{% set sha256 = "b5a6260626b9b7caafb73e7a54447790337383373b699c3c323a45f32f27f7cd" %}
-{% set md5 = "6ee8480c40064a3650940001bd7bbc09" %}
+{% set version = "1.12.6" %}
+{% set sha256 = "b72ce3cf7ed4fab2df4292c7eec68753025cb5bbe502d07bafae3a9fc0f98966" %}
+{% set pkg_name = "plotly" %}
 
 package:
-  name: plotly
+  name: {{ pkg_name }}
   version: {{ version }}
 
 source:
   fn: plotly-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/plotly/plotly-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ pkg_name[0] }}/{{ pkg_name }}/{{ pkg_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  md5: {{ md5 }}
 
 build:
   number: 0
