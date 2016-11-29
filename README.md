@@ -16,6 +16,18 @@ histograms, heatmaps, subplots, multiple-axes, polar charts and
 bubble charts.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/plotly-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/plotly-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/plotly-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/plotly-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/plotly-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/plotly-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/version.svg)](https://anaconda.org/conda-forge/plotly)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/downloads.svg)](https://anaconda.org/conda-forge/plotly)
+
 Installing plotly
 =================
 
@@ -36,7 +48,6 @@ It is possible to list all of the versions of `plotly` available on your platfor
 ```
 conda search plotly --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -72,18 +83,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/plotly-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/plotly-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/plotly-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/plotly-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/plotly-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/plotly-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/version.svg)](https://anaconda.org/conda-forge/plotly)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/downloads.svg)](https://anaconda.org/conda-forge/plotly)
 
 
 Updating plotly-feedstock
