@@ -25,6 +25,7 @@ requirements:
     - requests
     - pytz
     - six
+    - decorator
 
 test:
   imports:
