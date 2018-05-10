@@ -19,14 +19,16 @@ bubble charts.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/plotly-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/plotly-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/plotly-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/plotly-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/plotly-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/plotly-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/plotly-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/plotly-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/plotly-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/plotly-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/plotly-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/plotly-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/version.svg)](https://anaconda.org/conda-forge/plotly)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotly/badges/downloads.svg)](https://anaconda.org/conda-forge/plotly)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-plotly-green.svg)](https://anaconda.org/conda-forge/plotly) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/plotly.svg)](https://anaconda.org/conda-forge/plotly) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/plotly.svg)](https://anaconda.org/conda-forge/plotly) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/plotly.svg)](https://anaconda.org/conda-forge/plotly) |
 
 Installing plotly
 =================
