@@ -35,6 +35,7 @@ test:
 about:
   home: https://plot.ly/python/
   license: MIT
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
   summary: 'An interactive, browser-based graphing library for Python'
   description: |
     Plotly's Python graphing library makes interactive,
