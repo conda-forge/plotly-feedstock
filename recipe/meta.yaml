@@ -1,5 +1,5 @@
-{% set version = "2.6.0" %}
-{% set sha256 = "66c0adb1928deda4c1e6a19d1afa3296b57918018500cab83e1ec74941b6fe35" %}
+{% set version = "2.7.0" %}
+{% set sha256 = "f7305816a423fd899da20919282445703118aeece19a54fb97be4cbf302341f8" %}
 {% set pkg_name = "plotly" %}
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
