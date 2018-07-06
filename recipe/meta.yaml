@@ -1,5 +1,5 @@
-{% set version = "2.7.0" %}
-{% set sha256 = "f7305816a423fd899da20919282445703118aeece19a54fb97be4cbf302341f8" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "baab7f8d54f37df89f31d6e6e5d2d4b491bccb79e5d490e25d5762bb762a277c" %}
 {% set pkg_name = "plotly" %}
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
