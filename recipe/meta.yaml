@@ -1,5 +1,5 @@
-{% set version = "3.0.0" %}
-{% set sha256 = "baab7f8d54f37df89f31d6e6e5d2d4b491bccb79e5d490e25d5762bb762a277c" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "5a51a52a2735f5974ffbed06e97f1591a18ef0d8a96ac90f6a1c1bb88c72504d" %}
 {% set pkg_name = "plotly" %}
 
 package:
