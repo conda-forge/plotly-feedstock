@@ -24,6 +24,10 @@ requirements:
     - six
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - plotly
 
