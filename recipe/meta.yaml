@@ -1,4 +1,4 @@
-{% set version = "4.5.1" %}
+{% set version = "4.5.2" %}
 
 package:
   name: plotly
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: 75c95c0eacdeb260fd2dc21dbe8583721c3e229bdf176a41d11092f74171d8bc
+  sha256: 742e2de326199dd704f8bb0c1cae96a5f75ff8f383c035bfb461f347612354a5
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -30,8 +30,8 @@ test:
 about:
   home: https://plot.ly/python/
   license: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: 'An interactive, browser-based graphing library for Python'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  summary: An interactive, browser-based graphing library for Python
   description: |
     Plotly's Python graphing library makes interactive,
     publication-quality graphs online. Examples of how to make line
