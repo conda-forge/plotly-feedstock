@@ -5,7 +5,7 @@ Home: https://plot.ly/python/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An interactive, browser-based graphing library for Python
 
