@@ -1,11 +1,12 @@
+{% set name = "plotly" %}
 {% set version = "4.11.0" %}
 
 package:
-  name: plotly
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/plotly/plotly-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b6ad5c3d2cbf056a782e3c6833a334c45a5453a12dc8a48df971602509e8d3d6
 
 build:
@@ -31,13 +32,14 @@ test:
     - pip
   commands:
     - pip check
+    - test -f $PREFIX/share/jupyter/lab/extensions/js/jupyterlab-{{ name }}-{{ version }}.tgz  # [unix]
   imports:
     - plotly
 
 about:
   home: https://plot.ly/python/
   license: MIT
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  license_file: LICENSE.txt
   summary: An interactive, browser-based graphing library for Python
   description: |
     Plotly's Python graphing library makes interactive,
