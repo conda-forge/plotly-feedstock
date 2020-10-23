@@ -5,9 +5,13 @@ Home: https://plot.ly/python/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plotly-feedstock/blob/master/LICENSE.txt)
 
 Summary: An interactive, browser-based graphing library for Python
+
+Development: https://github.com/plotly/plotly.py
+
+Documentation: https://plot.ly/python/
 
 Plotly's Python graphing library makes interactive,
 publication-quality graphs online. Examples of how to make line
