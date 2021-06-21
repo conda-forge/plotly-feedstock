@@ -15,13 +15,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - setuptools
-    - retrying >=1.3.3
-    - six
+    - tenacity >=6.2.0
+    - six ==1.15.0
 
 test:
   requires:
