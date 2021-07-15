@@ -9,7 +9,7 @@ source:
   sha256: 71f6744acdc524c22236c226d7cf1072d1a58ebacaf749c640998298472c8c44
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - setuptools
     - tenacity >=6.2.0
-    - six ==1.15.0
+    - six
 
 test:
   requires:
