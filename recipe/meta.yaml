@@ -9,7 +9,7 @@ source:
   sha256: 1575c34f87313818fc109a3d3326f2b91363d049c1e80cbf68561c8df24fb47c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -17,9 +17,9 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools >=40.8.0  # min version from pyproject.toml
   run:
     - python >=3.6
-    - setuptools
     - tenacity >=6.2.0
     - six
 
