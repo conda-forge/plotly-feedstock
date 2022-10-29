@@ -17,14 +17,19 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - setuptools >=40.8.0  # min version from pyproject.toml
+    - setuptools >=40.8.0  # min version from packages/python/plotly/pyproject.toml
   run:
     - python >=3.6
+    # Check install_requires=[...] in
+    # <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/setup.py>
     - tenacity >=6.2.0
 
 test:
   requires:
     - pip
+    # Temporary, since matplotlib-base is not yet built for py311, and the
+    # test script below "conda install"s it:
+    - python <3.11
   commands:
     - pip check
     - conda install -y numpy
