@@ -27,9 +27,6 @@ requirements:
 test:
   requires:
     - pip
-    # Temporary, since matplotlib-base is not yet built for py311, and the
-    # test script below "conda install"s it:
-    - python <3.11
   commands:
     - pip check
     - conda install -y numpy
