@@ -155,6 +155,7 @@ Feedstock Maintainers
 =====================
 
 * [@chohner](https://github.com/chohner/)
+* [@maresb](https://github.com/maresb/)
 * [@moorepants](https://github.com/moorepants/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
