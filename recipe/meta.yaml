@@ -9,7 +9,7 @@ source:
   sha256: 8bf1b37a1e3cb260a4aa77ab79c9db4fd0ad3ccd66463c3a3e8a5300196ec61e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -26,8 +26,7 @@ requirements:
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
     # The lower bound of 7.6 comes from README.md.
-    # The upper bound <8 is due to <https://github.com/plotly/plotly.py/issues/3686>.
-    - ipywidgets >=7.6,<8
+    - ipywidgets >=7.6
 
 test:
   requires:
