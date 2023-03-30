@@ -1,11 +1,11 @@
-About plotly
-============
+About plotly-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plotly-feedstock/blob/main/LICENSE.txt)
 
 Home: https://plot.ly/python/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plotly-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interactive, browser-based graphing library for Python
 
