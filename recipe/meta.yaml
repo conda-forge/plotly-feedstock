@@ -1,4 +1,4 @@
-{% set version = "5.13.1" %}
+{% set version = "5.14.0" %}
 
 package:
   name: plotly
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: 90ee9a1fee0dda30e2830e129855081ea17bd1b06a553a62b62de15caff1a219
+  sha256: 02e40264f145e524d9628fd516031976b60d74a33bbabce037ea28580bcd4e0c
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     # Check install_requires=[...] in
     # <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/setup.py>
     - tenacity >=6.2.0
+    - packaging
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
     # The lower bound of 7.6 comes from README.md.
