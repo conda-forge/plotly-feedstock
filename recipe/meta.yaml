@@ -23,6 +23,7 @@ requirements:
     # Check install_requires=[...] in
     # <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/setup.py>
     - tenacity >=6.2.0
+    - packaging
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
     # The lower bound of 7.6 comes from README.md.
