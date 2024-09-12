@@ -1,4 +1,4 @@
-{% set version = "5.24.0" %}
+{% set version = "5.24.1" %}
 
 package:
   name: plotly
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: eae9f4f54448682442c92c1e97148e3ad0c52f0cf86306e1b76daba24add554a
+  sha256: dbc8ac8339d248a4bcc36e08a5659bacfe1b079390b8953533f4eb22169b4bae
 
 build:
   number: 0
