@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     # Check <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/requires-install.txt>
-    - narwhals>=1.15.1
+    - narwhals >=1.15.1
     - packaging
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
