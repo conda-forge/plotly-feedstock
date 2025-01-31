@@ -18,11 +18,11 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools >=40.8.0  # min version from packages/python/plotly/pyproject.toml
+    - wheel
   run:
     - python >={{ python_min }}
-    # Check install_requires=[...] in
-    # <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/setup.py>
-    - tenacity >=6.2.0
+    # Check <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/requires-install.txt>
+    - narwhals>=1.15.1
     - packaging
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
