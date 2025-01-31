@@ -1,4 +1,4 @@
-{% set version = "5.24.1" %}
+{% set version = "6.0.0" %}
 
 package:
   name: plotly
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: dbc8ac8339d248a4bcc36e08a5659bacfe1b079390b8953533f4eb22169b4bae
+  sha256: c4aad38b8c3d65e4a5e7dd308b084143b9025c2cc9d5317fc1f1d30958db87d3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -18,11 +18,11 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools >=40.8.0  # min version from packages/python/plotly/pyproject.toml
+    - wheel
   run:
     - python >={{ python_min }}
-    # Check install_requires=[...] in
-    # <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/setup.py>
-    - tenacity >=6.2.0
+    # Check <https://github.com/plotly/plotly.py/blob/master/packages/python/plotly/requires-install.txt>
+    - narwhals >=1.15.1
     - packaging
   run_constrained:
     # This ensures that if ipywidgets is installed, then the version is compatible with Plotly.
@@ -47,7 +47,6 @@ test:
     - test-imports-requiring-pandas.py
   imports:
     # From setup.py
-    - jupyterlab_plotly
     - plotly
     # - plotly.plotly (deprecated)
     - plotly.offline
@@ -80,7 +79,6 @@ test:
     - plotly.graph_objs.funnel
     - plotly.graph_objs.funnelarea
     - plotly.graph_objs.heatmap
-    - plotly.graph_objs.heatmapgl
     - plotly.graph_objs.histogram
     - plotly.graph_objs.histogram2d
     - plotly.graph_objs.histogram2dcontour
@@ -94,7 +92,6 @@ test:
     - plotly.graph_objs.parcats
     - plotly.graph_objs.parcoords
     - plotly.graph_objs.pie
-    - plotly.graph_objs.pointcloud
     - plotly.graph_objs.sankey
     - plotly.graph_objs.scatter
     - plotly.graph_objs.scatter3d
@@ -130,7 +127,6 @@ test:
     - plotly.validators.funnel
     - plotly.validators.funnelarea
     - plotly.validators.heatmap
-    - plotly.validators.heatmapgl
     - plotly.validators.histogram
     - plotly.validators.histogram2d
     - plotly.validators.histogram2dcontour
@@ -144,7 +140,6 @@ test:
     - plotly.validators.parcats
     - plotly.validators.parcoords
     - plotly.validators.pie
-    - plotly.validators.pointcloud
     - plotly.validators.sankey
     - plotly.validators.scatter
     - plotly.validators.scatter3d
