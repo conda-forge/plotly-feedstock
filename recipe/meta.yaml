@@ -47,7 +47,6 @@ test:
     - test-imports-requiring-pandas.py
   imports:
     # From setup.py
-    - jupyterlab_plotly
     - plotly
     # - plotly.plotly (deprecated)
     - plotly.offline
@@ -80,7 +79,6 @@ test:
     - plotly.graph_objs.funnel
     - plotly.graph_objs.funnelarea
     - plotly.graph_objs.heatmap
-    - plotly.graph_objs.heatmapgl
     - plotly.graph_objs.histogram
     - plotly.graph_objs.histogram2d
     - plotly.graph_objs.histogram2dcontour
@@ -94,7 +92,6 @@ test:
     - plotly.graph_objs.parcats
     - plotly.graph_objs.parcoords
     - plotly.graph_objs.pie
-    - plotly.graph_objs.pointcloud
     - plotly.graph_objs.sankey
     - plotly.graph_objs.scatter
     - plotly.graph_objs.scatter3d
@@ -130,7 +127,6 @@ test:
     - plotly.validators.funnel
     - plotly.validators.funnelarea
     - plotly.validators.heatmap
-    - plotly.validators.heatmapgl
     - plotly.validators.histogram
     - plotly.validators.histogram2d
     - plotly.validators.histogram2dcontour
@@ -144,7 +140,6 @@ test:
     - plotly.validators.parcats
     - plotly.validators.parcoords
     - plotly.validators.pie
-    - plotly.validators.pointcloud
     - plotly.validators.sankey
     - plotly.validators.scatter
     - plotly.validators.scatter3d
