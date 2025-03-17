@@ -64,7 +64,6 @@ test:
     - plotly.graph_objects
     - _plotly_utils
     - _plotly_utils.colors
-    - _plotly_future_
     - plotly.graph_objs.bar
     - plotly.graph_objs.barpolar
     - plotly.graph_objs.box
