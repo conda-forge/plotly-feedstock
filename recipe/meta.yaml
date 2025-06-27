@@ -1,4 +1,4 @@
-{% set version = "6.1.2" %}
+{% set version = "6.2.0" %}
 
 package:
   name: plotly
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: 4fdaa228926ba3e3a213f4d1713287e69dcad1a7e66cf2025bd7d7026d5014b4
+  sha256: 9dfa23c328000f16c928beb68927444c1ab9eae837d1fe648dbcda5360c7953d
 
 build:
   number: 0
@@ -110,54 +110,54 @@ test:
     - plotly.graph_objs.violin
     - plotly.graph_objs.volume
     - plotly.graph_objs.waterfall
-    - plotly.validators
-    - plotly.validators.bar
-    - plotly.validators.barpolar
-    - plotly.validators.box
-    - plotly.validators.candlestick
-    - plotly.validators.carpet
-    - plotly.validators.choropleth
-    - plotly.validators.choroplethmapbox
-    - plotly.validators.cone
-    - plotly.validators.contour
-    - plotly.validators.contourcarpet
-    - plotly.validators.densitymapbox
-    - plotly.validators.frame
-    - plotly.validators.funnel
-    - plotly.validators.funnelarea
-    - plotly.validators.heatmap
-    - plotly.validators.histogram
-    - plotly.validators.histogram2d
-    - plotly.validators.histogram2dcontour
-    - plotly.validators.icicle
-    - plotly.validators.image
-    - plotly.validators.indicator
-    - plotly.validators.isosurface
-    - plotly.validators.layout
-    - plotly.validators.mesh3d
-    - plotly.validators.ohlc
-    - plotly.validators.parcats
-    - plotly.validators.parcoords
-    - plotly.validators.pie
-    - plotly.validators.sankey
-    - plotly.validators.scatter
-    - plotly.validators.scatter3d
-    - plotly.validators.scattercarpet
-    - plotly.validators.scattergeo
-    - plotly.validators.scattergl
-    - plotly.validators.scattermapbox
-    - plotly.validators.scatterpolar
-    - plotly.validators.scatterpolargl
-    - plotly.validators.scatterternary
-    - plotly.validators.splom
-    - plotly.validators.streamtube
-    - plotly.validators.sunburst
-    - plotly.validators.surface
-    - plotly.validators.table
-    - plotly.validators.treemap
-    - plotly.validators.violin
-    - plotly.validators.volume
-    - plotly.validators.waterfall
+    # - plotly.validators  # validators seem to not be available for import after https://github.com/plotly/plotly.py/pull/5214
+    # - plotly.validators.bar
+    # - plotly.validators.barpolar
+    # - plotly.validators.box
+    # - plotly.validators.candlestick
+    # - plotly.validators.carpet
+    # - plotly.validators.choropleth
+    # - plotly.validators.choroplethmapbox
+    # - plotly.validators.cone
+    # - plotly.validators.contour
+    # - plotly.validators.contourcarpet
+    # - plotly.validators.densitymapbox
+    # - plotly.validators.frame
+    # - plotly.validators.funnel
+    # - plotly.validators.funnelarea
+    # - plotly.validators.heatmap
+    # - plotly.validators.histogram
+    # - plotly.validators.histogram2d
+    # - plotly.validators.histogram2dcontour
+    # - plotly.validators.icicle
+    # - plotly.validators.image
+    # - plotly.validators.indicator
+    # - plotly.validators.isosurface
+    # - plotly.validators.layout
+    # - plotly.validators.mesh3d
+    # - plotly.validators.ohlc
+    # - plotly.validators.parcats
+    # - plotly.validators.parcoords
+    # - plotly.validators.pie
+    # - plotly.validators.sankey
+    # - plotly.validators.scatter
+    # - plotly.validators.scatter3d
+    # - plotly.validators.scattercarpet
+    # - plotly.validators.scattergeo
+    # - plotly.validators.scattergl
+    # - plotly.validators.scattermapbox
+    # - plotly.validators.scatterpolar
+    # - plotly.validators.scatterpolargl
+    # - plotly.validators.scatterternary
+    # - plotly.validators.splom
+    # - plotly.validators.streamtube
+    # - plotly.validators.sunburst
+    # - plotly.validators.surface
+    # - plotly.validators.table
+    # - plotly.validators.treemap
+    # - plotly.validators.violin
+    # - plotly.validators.volume
+    # - plotly.validators.waterfall
 
 about:
   home: https://plot.ly/python/
