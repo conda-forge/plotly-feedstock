@@ -1,12 +1,12 @@
-{% set version = "6.9.0" %}
+{% set version = "7.0.0" %}
 
 package:
   name: plotly
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/plotly/plotly-{{ version }}.tar.gz
-  sha256: 967ad33e8c704fed051800d11d985eb206a9c795c14206b30a6f463ed9c67d0d
+  url: https://files.pythonhosted.org/packages/source/p/plotly/plotly-{{ version }}.tar.gz
+  sha256: 08b21f1244a97e7a1a699833c4bb2678475aa108b3f1989886ed0b038ebfd849
 
 build:
   number: 0
@@ -71,11 +71,9 @@ test:
     - plotly.graph_objs.candlestick
     - plotly.graph_objs.carpet
     - plotly.graph_objs.choropleth
-    - plotly.graph_objs.choroplethmapbox
     - plotly.graph_objs.cone
     - plotly.graph_objs.contour
     - plotly.graph_objs.contourcarpet
-    - plotly.graph_objs.densitymapbox
     - plotly.graph_objs.funnel
     - plotly.graph_objs.funnelarea
     - plotly.graph_objs.heatmap
@@ -98,7 +96,6 @@ test:
     - plotly.graph_objs.scattercarpet
     - plotly.graph_objs.scattergeo
     - plotly.graph_objs.scattergl
-    - plotly.graph_objs.scattermapbox
     - plotly.graph_objs.scatterpolar
     - plotly.graph_objs.scatterpolargl
     - plotly.graph_objs.scatterternary
@@ -118,11 +115,9 @@ test:
     # - plotly.validators.candlestick
     # - plotly.validators.carpet
     # - plotly.validators.choropleth
-    # - plotly.validators.choroplethmapbox
     # - plotly.validators.cone
     # - plotly.validators.contour
     # - plotly.validators.contourcarpet
-    # - plotly.validators.densitymapbox
     # - plotly.validators.frame
     # - plotly.validators.funnel
     # - plotly.validators.funnelarea
@@ -146,7 +141,6 @@ test:
     # - plotly.validators.scattercarpet
     # - plotly.validators.scattergeo
     # - plotly.validators.scattergl
-    # - plotly.validators.scattermapbox
     # - plotly.validators.scatterpolar
     # - plotly.validators.scatterpolargl
     # - plotly.validators.scatterternary
